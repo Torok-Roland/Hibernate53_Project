@@ -5,11 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dbe2fc42-9195-4185-93f2-89977fba4d46" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/dao/PersonDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/dao/AddressDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/dao/AddressDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/database/DataBaseConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/database/DataBaseConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/dao/PersonDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/dao/PersonDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/entities/Address.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/entities/Address.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/entities/AddressId.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/entities/AddressId.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/entities/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/entities/Person.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
