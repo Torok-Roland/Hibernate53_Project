@@ -3,6 +3,7 @@ package org.example.dao;
 import org.example.database.DataBaseConfig;
 import org.example.entities.Address;
 import org.example.entities.AddressId;
+import org.example.entities.Person;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 
@@ -53,5 +54,16 @@ public class AddressDao {
         session.close();
         return address;
     }
+    public void removeAddress(Address address){
+        Session session = DataBaseConfig.getSessionFactory().openSession();
+        Transaction transaction = session.beginTransaction();
 
-}
+        session.remove(address);
+
+        transaction.commit();
+        session.close();
+    }
+
+    }
+
+

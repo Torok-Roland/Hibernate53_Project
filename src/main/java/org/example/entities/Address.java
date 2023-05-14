@@ -58,4 +58,5 @@ public class Address {
                 ", buildingType=" + buildingType +
                 '}';
     }
+
 }

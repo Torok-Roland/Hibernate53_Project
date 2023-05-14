@@ -14,9 +14,13 @@ public class Main {
 
     public static void main(String[] args) {
         AddressId addressId = new AddressId("Primaverii", 14, "Cluj-Napoca");
+        AddressId address2 = new AddressId("Independentei", 7, "Sibiu");
+
         Address address = new Address(addressId, 150, BuildingType.PRIVATE_HOUSE);
+        Address addressTwo = new Address(address2, 220, BuildingType.DUPLEX);
 
         addressDao.createAddress(address);
+        addressDao.createAddress(addressTwo);
 
         Person firstPerson = new Person("1980101303930", "Moromete", 1998, address);
         personDao.createPerson(firstPerson);
@@ -28,9 +32,9 @@ public class Main {
         System.out.println(personDao.readPerson("1980101303930"));
 
         Person ion = new Person("193040567842345", "Ion", 1993, address);
-        Person vlad = new Person("177040567842345", "Vlad", 1977, address);
+        Person vlad = new Person("177040567842345", "Vlad", 1977, addressTwo);
         Person mihai = new Person("186040567842345", "Mihai", 1986, address);
-        Person dorin = new Person("168040567842345", "Dorin", 1968, address);
+        Person dorin = new Person("168040567842345", "Dorin", 1968, addressTwo);
         Person maria = new Person("289121298983556", "Maria", 1989, address);
         Person ioana = new Person("299121298983556", "Ioana", 1999, address);
         Person simona = new Person("278121298983556", "Simona", 1978, address);
@@ -51,6 +55,13 @@ public class Main {
         System.out.println("***********");
         personDao.readAllPerson().forEach(p -> System.out.println(p));
 
+        personDao.removePerson(simona);
+
+        System.out.println("Young");
+        personDao.youngThan(1990).forEach(System.out::println);
+
+        System.out.println("---------------------------------------------");
+        personDao.allFrom("Cluj-Napoca").forEach(System.out::println);
 
 }
 }
